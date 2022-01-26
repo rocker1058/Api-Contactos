@@ -1,0 +1,12 @@
+CREATE TABLE contacto (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(40),
+	apellido VARCHAR(40),
+	correo TEXT,
+	telefono VARCHAR(18),
+    direccion TEXT
+);
+
+
+INSERT INTO contacto(nombre,apellido,correo, telefono, direccion)
+    VALUES ('leo','arango','leo@gmail.com','3108353639','calle 99 9a');

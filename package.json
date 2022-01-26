@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js \""
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js \"",
+    "test": "mocha test/api.test.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,8 @@
   },
   "dependencies": {
     "express": "^4.17.2",
-    "pg": "^8.7.1"
+    "mocha": "^9.2.0",
+    "pg": "^8.7.1",
+    "supertest": "^6.2.2"
   }
 }
